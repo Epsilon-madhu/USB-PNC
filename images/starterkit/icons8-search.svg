@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="29px" viewBox="0 0 30 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>Fill 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-1.0%" y="-30.0%" width="102.0%" height="160.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.246776661 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PNC-Homepage---Desktop" transform="translate(-1127.000000, -77.000000)" fill="#FFFFFF">
+            <g id="Group" filter="url(#filter-1)" transform="translate(0.000000, 70.000000)">
+                <path d="M1137.35037,11.2681923 C1134.05378,11.2666977 1131.39126,13.8101343 1131.38705,16.964902 C1131.38284,20.1143788 1134.0474,22.6738031 1137.33726,22.6800258 C1140.63722,22.6863403 1143.32559,20.1181744 1143.32247,16.9622565 C1143.31922,13.8171505 1140.64756,11.2698032 1137.35037,11.2681923 M1142.44972,23.3034224 C1138.61576,25.9874134 1133.74377,25.2340326 1130.99164,22.149197 C1128.20607,19.0268649 1128.35956,14.4090432 1131.34483,11.4154185 C1134.20427,8.54785568 1138.97942,8.17461588 1142.3945,10.6123491 C1145.76917,13.0212123 1146.97189,17.950163 1144.0428,21.7674457 C1146.36788,24.0058494 1148.68875,26.2402273 1151,28.4652886 C1150.45037,28.9898946 1149.93394,29.4827552 1149.392,30 C1147.09182,27.7813798 1144.77444,25.5458517 1142.44972,23.3034224" id="Fill-1"></path>
+            </g>
+        </g>
+    </g>
+</svg>

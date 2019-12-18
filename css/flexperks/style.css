@@ -1,0 +1,564 @@
+/*------------------------------------*\
+    $ABSTRACTS
+\*------------------------------------*/
+/*------------------------------------*\
+    #MIXINS
+\*------------------------------------*/
+/** CSS Transition
+ *	Usage: @include transition(width,0.3s,ease-out);
+ */
+/** Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback  
+ *	Usage: @include font-size(1, large);
+ */
+/*------------------------------------*\
+    #VARIABLES
+\*------------------------------------*/
+/*------------------------------------*\
+    #COLORS
+\*------------------------------------*/
+/*
+ * 1) Color variables involve a two-tier system to keep colors in sync. The
+ *    first tier defines the brand and neutral colors, and the second tier
+ *    defines the application of those colors.
+ */
+/*
+ * Brand Colors
+ * 1) Brand color variables use English names to define colors to make palettes easier to
+ *    identify. Names are generated using this tool: http://chir.ag/projects/name-that-color/
+ * 2) Brand color variables should typically not be used directly in Sass partials. Instead, use
+ *    second-tier application colors.
+ *
+ */
+/*
+ * Neutral Colors
+ * 1) Neutral color variables use a numbered system to define variables for better maintainability.
+ *    "$color-gray-10" means "10% gray", which is a gray closer to white than to black. For more info
+ *    read https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3#.brevrq67p
+ */
+/**
+ * Utility Colors
+ * 1) Utility colors are colors used to provide feedback, such as alert messages,
+ * form validation, etc.
+ */
+/*
+  * Text Colors
+  * 1) These are non-linked text colors, such as body copy.
+  */
+/*
+ * Heading Colors
+ * 1) These are non-linked heading colors, such as h2, h3, etc.
+ */
+/*
+ * Text Link Colors
+ * 1) These are for linked text, such as a link found within an article,
+ *    navigation link, footer link, etc.
+ */
+/*
+ * Border Colors
+ * 1) Border colors are used as decoration or dividers, such as as a seperator
+ *    for navigation items, block borders, etc.
+ */
+/*------------------------------------*\
+    #TYPOGRAPHY
+\*------------------------------------*/
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+/**
+ * Spacing Defaults
+ */
+/*------------------------------------*\
+    #BORDERS
+\*------------------------------------*/
+/**
+ * Border Width
+ */
+/**
+ * Border Radius
+ */
+/*------------------------------------*\
+    #ANIMATION
+\*------------------------------------*/
+/**
+ * Animation Duration
+ */
+/**
+ * Animation Easing
+ */
+/*------------------------------------*\
+    #BREAKPOINTS
+\*------------------------------------*/
+/**
+ * Breakpoints
+ */
+/*------------------------------------*\
+    $COMPONENTS
+\*------------------------------------*/
+/*------------------------------------*\
+    #FOOTER
+\*------------------------------------*/
+/**
+ * Footer
+ */
+footer {
+  background: #1C4165; }
+  footer .footer-links .list li {
+    border-right: 1px solid #fff; }
+    @media only screen and (max-width: 66em) {
+      footer .footer-links .list li {
+        border-right: 0;
+        padding-left: 0; } }
+    footer .footer-links .list li a {
+      color: #fff; }
+  footer .copyright p {
+    color: #C7C7C7; }
+
+/**
+ * Pagination
+ */
+.pagination {
+  overflow: hidden; }
+  .pagination li {
+    float: left;
+    border-right: 1px solid #d9d9d9; }
+    .pagination li:last-child {
+      border: 0; }
+  .pagination a {
+    padding: 1em; }
+
+.card-wrapper .card-body .c-btn {
+  background-color: #D83B48;
+  border: 0px; }
+
+.card-wrapper .card-body h5 {
+  color: #17409C; }
+
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+/**
+ * Button
+ */
+.c-btn:hover, .c-btn:focus {
+  background: #D83B48;
+  color: #fff; }
+
+.dummy-div {
+  height: 300px; }
+
+.btn-fill, .btn-primary {
+  background-color: #0069AA; }
+
+.btn-fill:hover, .btn-fill:focus {
+  background-color: #F58025; }
+
+.btn.btn-fill.grey {
+  background-color: #617380; }
+
+.btn.btn-fill.grey:hover, .btn.btn-fill.grey:focus {
+  background-color: #F58025; }
+
+.btn-outline {
+  border: solid 2px #007DBA;
+  color: #007DBA; }
+
+.btn-outline:hover {
+  background-color: #007DBA; }
+
+.header-link-wrapper i {
+  background: #6ACFED; }
+
+.col-two-wrapper .col-title p {
+  color: #4A00B3; }
+
+.primary-nav-wrapper > .navbar .mega-dropdown a.nav-link {
+  color: #1C4165; }
+
+.profile-info h1 {
+  color: #0C2074; }
+
+.productConfigurationDetail .add-btns .btn {
+  background-color: #6EA92E; }
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: #3071a9;
+  border-radius: 5px;
+  border: 0.2px solid #010101; }
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #367ebd; }
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: #3071a9;
+  border-radius: 5px;
+  border: 0.2px solid #010101; }
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent; }
+
+input[type=range]::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  border-radius: 5px; }
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #3071a9; }
+
+input[type=range]::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  border-radius: 5px; }
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #367ebd; }
+
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 2px solid #ccc;
+  background: #ffffff;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  /* Add cool effects to your sliders! */ }
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 2px solid #ccc;
+  background: #ffffff;
+  cursor: pointer; }
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 2px solid #ccc;
+  background: #ffffff;
+  cursor: pointer; }
+
+.progress-sec .tile.init {
+  border-color: #6EA92E; }
+
+.progress-sec .tile.active, .progress-sec .tile.active::before {
+  background-color: #6EA92E;
+  color: #fff; }
+
+.progress-sec .tile.active::after, .progress-sec .tile.active::before {
+  content: none; }
+
+.progress-sec .tile {
+  border-color: #6EA92E;
+  background-color: #fff; }
+
+.progress-sec .progress {
+  background-color: #6EA92E; }
+
+.col-two-wrapper .content {
+  background-color: #1e8fe1;
+  border: solid 1px #1e8fe1; }
+  .col-two-wrapper .content .header-link-wrapper h1 {
+    color: #fff;
+    padding: 0px 102px; }
+  .col-two-wrapper .content .header-link-wrapper a {
+    color: #fff; }
+
+.col-two-wrapper.full-bg {
+  background-color: #757f8a; }
+  .col-two-wrapper.full-bg .col-title p {
+    color: #fff; }
+  .col-two-wrapper.full-bg .content {
+    background-color: #757f8a;
+    border: solid 1px #757f8a; }
+    .col-two-wrapper.full-bg .content .header-link-wrapper h1 {
+      padding: 0px 70px; }
+
+.col-two-wrapper .slick-slider-wrapper .slide p {
+  color: #ffffff; }
+
+/*------------------------------------*\
+    #HEADER
+\*------------------------------------*/
+/**
+ * Header
+ */
+.c-header {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.2);
+  padding: 0.5em 0; }
+  @media all and (min-height: 46.8em) {
+    .c-header {
+      padding: 1em 0; } }
+
+header {
+  background-color: #2D3942; }
+  header .logo-wrapper {
+    margin: 0 auto;
+    width: 20%;
+    display: inline-block;
+    text-align: right; }
+    header .logo-wrapper img {
+      width: 85px; }
+
+.nav-container {
+  padding: 0px 0px;
+  background: #414E58 !important;
+  max-width: 100%;
+  border-bottom: solid 1px #d9d9d9;
+  color: #fff !important; }
+
+.icon-Icon---Caret---Down:before {
+  content: "\e912";
+  color: #fff; }
+
+footer .list {
+  padding-top: 10px;
+  padding-left: 0px;
+  text-align: right;
+  margin-bottom: 8px; }
+
+footer .list li:first-child {
+  padding-left: 0px; }
+
+footer .list li a {
+  font-size: 12px;
+  line-height: 13px;
+  color: #fff; }
+
+footer p {
+  font-size: 9px;
+  line-height: 10px;
+  text-align: right; }
+
+footer {
+  background-color: #2D3942;
+  border-top: 4px solid #F58025;
+  padding: 18px 15px;
+  color: #fff; }
+
+footer .list li {
+  display: inline-block;
+  padding: 0px 15px;
+  border-right: 1px solid #fff;
+  line-height: 6px; }
+
+.primary-nav-wrapper > .navbar .mega-dropdown a.nav-link {
+  color: #fff; }
+
+/**
+ * Header Controls
+ * 1) This container holds the primary nav and search menu
+ */
+.c-header__controls {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  padding-right: 1rem; }
+
+/**
+ * Nav toggle button
+ * 1) Styles for the general nav toggle button
+ */
+.nav-toggle {
+  display: block;
+  padding: 0.9rem 1rem 0.7rem;
+  font-size: 1.3rem;
+  line-height: 1; }
+  @media all and (min-width: 46.8em) {
+    .nav-toggle {
+      display: none; } }
+  @media all and (max-width: 17em) {
+    .nav-toggle {
+      padding-left: 0.2rem;
+      padding-right: 0.2rem; } }
+
+/**
+ * Search nav toggle button
+ * 1) Specific nav toggle button for the search form
+ */
+.nav-toggle-search {
+  display: block; }
+  @media all and (min-width: 29.75em) {
+    .nav-toggle-search {
+      display: none; } }
+
+.matMindsPage.annualFeepage .left-content h5 {
+  margin: 15px 0 10px 0;
+  padding-left: 10px; }
+
+.matMindsPage.annualFeepage .left-content .annualfeePoints {
+  padding-left: 0; }
+
+.matMindsPage.annualFeepage .left-content .transfer-error .link {
+  padding-left: 40px;
+  font-size: 14px; }
+  @media all and (max-width: 29.75em) {
+    .matMindsPage.annualFeepage .left-content .transfer-error .link {
+      display: block;
+      padding-left: 0px; } }
+
+.matMindsPage.annualFeepage .left-content .transfer-error .btn {
+  font-size: 16px;
+  padding: 10px 20px; }
+
+.matMindsPage.annualFeepage .banner-wrapper .anchorWrapper .btnWith-arrow {
+  text-align: left; }
+
+.matMindsPage.realTimeRewards .anchorWrapper {
+  margin-top: 40px; }
+
+.productConfigurationDetail.v-1 p {
+  text-decoration: none;
+  margin-top: 10px; }
+  .productConfigurationDetail.v-1 p:last-child {
+    margin-bottom: 10px; }
+
+.productConfigurationDetail.v-1 .description-wrapper a {
+  color: #0099FF; }
+
+.productConfigurationDetail.v-1 .button-wrapper .btn {
+  width: 100%; }
+
+.productConfigurationDetail.v-1 .e-card_layout {
+  height: 209px;
+  position: relative; }
+
+.productConfigurationDetail.v-1 .fadeButton {
+  opacity: 0.39;
+  pointer-events: none; }
+
+.productConfigurationDetail.v-1 .gift-card-border {
+  border: 1px solid #D4D4D4;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  position: absolute;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  width: 100%;
+  top: 21px;
+  padding-bottom: 40px;
+  background: #fff;
+  z-index: 1; }
+  .productConfigurationDetail.v-1 .gift-card-border .row {
+    padding: 10px;
+    display: flex;
+    align-items: center; }
+  .productConfigurationDetail.v-1 .gift-card-border .pointsText {
+    color: #ABABAB; }
+
+.productConfigurationDetail.v-1 .w-d {
+  border: none; }
+
+.productConfigurationDetail.v-1 .p-d {
+  padding: 10px 15px; }
+
+.productConfigurationDetail.v-1 #totalRewardsPoint {
+  color: #818181;
+  font-family: "Helvetica Neue";
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.29px;
+  line-height: 19px;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background: #F0F0F0;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0px; }
+
+/*------------------------------------*\
+    #TEXT
+\*------------------------------------*/
+/**
+ * Passages of text
+ */
+.banner-wrapper .text-group-wrapper p {
+  margin: 0px 0px;
+  font-size: 14px;
+  padding-right: 30px; }
+
+.banner-wrapper .text-group-wrapper h1 {
+  margin: 10px 0px;
+  font-weight: 700;
+  text-align: left;
+  font-size: 38px;
+  text-transform: uppercase;
+  padding: 0px 100px 0 0; }
+
+.banner-wrapper .banner .text-group-wrapper {
+  position: absolute;
+  z-index: 3;
+  bottom: 20%;
+  left: 0px;
+  right: 0px; }
+
+.primary-nav-wrapper > .navbar input[type="text"] {
+  color: #fff; }
+  .primary-nav-wrapper > .navbar input[type="text"]::placeholder {
+    color: #fff;
+    opacity: 1; }
+  .primary-nav-wrapper > .navbar input[type="text"]:-ms-input-placeholder {
+    color: #fff; }
+  .primary-nav-wrapper > .navbar input[type="text"]::-ms-input-placeholder {
+    color: #fff; }
+
+.text-group-wrapper h1 {
+  margin: 10px 0px;
+  font-weight: 700;
+  text-align: left;
+  padding: 0px 150px 0 0; }
+
+.header-link-wrapper i {
+  background: #0069AA; }
+
+.ribbon-wrapper {
+  background-color: #ffffff;
+  padding: 20px 80px; }
+  .ribbon-wrapper h1 {
+    display: inline-block;
+    margin-left: 25px;
+    font-size: 40px;
+    font-weight: bold;
+    width: 75%; }
+
+.text a {
+  text-decoration: underline; }
+
+.text ul {
+  list-style: disc;
+  margin: 0 0 1em 1.2em; }
+  .text ul ul {
+    margin-bottom: 0; }
+
+.text ol {
+  list-style: decimal;
+  margin: 0 0 1em 1.5em; }
+  .text ol ol {
+    margin-bottom: 0; }
+
+/**
+ * Text passage
+ */
+.s-text-passage {
+  margin-bottom: 1rem; }
+
+/**
+ * Image within text passage
+ */
+.c-text-passage__img {
+  border-radius: 6px;
+  margin-bottom: 1rem; }

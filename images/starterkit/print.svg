@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="24px" viewBox="0 0 25 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>print</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Batch-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Order-Confimation---Desktop" transform="translate(-496.000000, -328.000000)" fill="#17409C" fill-rule="nonzero">
+            <g id="Group-6" transform="translate(496.000000, 325.000000)">
+                <g id="print" transform="translate(0.500000, 3.000000)">
+                    <path d="M16,17 L8,17 L8,16 L16,16 L16,17 Z M24,5 L24,18 L19.952,18 C19.548,20.423 16.466,24 13.518,24 L4,24 L4,18 L-3.55271368e-15,18 L-3.55271368e-15,5 L4,5 L4,0 L20,0 L20,5 L24,5 Z M6,5 L18,5 L18,2 L6,2 L6,5 Z M18,14 L6,14 L6,22 L12.691,22 C16.16,22 14.691,18.648 14.691,18.648 C14.691,18.648 18,20.242 18,16.648 L18,14 Z M22,7 L2,7 L2,16 L4,16 L4,12 L20,12 L20,16 L22,16 L22,7 Z M13,18 L8,18 L8,19 L13,19 L13,18 Z M20.5,8 C20.224,8 20,8.224 20,8.5 C20,8.776 20.224,9 20.5,9 C20.776,9 21,8.776 21,8.5 C21,8.224 20.776,8 20.5,8 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html class="pl" lang="en">
+
+<head>
+    <title>Product Details Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/starterkit/jquery.selectBox.css?1576658683755" media="all" />
+    <link rel="stylesheet" href="css/starterkit/slick.css?1576658683755" media="all" />
+    <link rel="stylesheet" href="css/starterkit/slick-theme.css?1576658683755" media="all" />
+    <link rel="stylesheet" href="css/starterkit/style.css?1576658683755" media="all" />
+    <link rel="stylesheet" href="css/starterkit/fonts-icon.css?1576658683755" media="all" />
+    <link rel="stylesheet" href="css/starterkit/pattern-scaffolding.css?1576658683755" media="all" />
+    <link rel="stylesheet" href="css/starterkit/jquery.mCustomScrollbar.min.css?1576658683755" media="all" />
+    <link rel="stylesheet" href="css/flexperks/style.css?1576658683755" media="all" />
+
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    <!-- never cache patterns -->
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+    <link rel="stylesheet" href="styleguide/css/styleguide.min.css?1576658683755" media="all">
+    <link rel="stylesheet" href="styleguide/css/prism-typeahead.min.css?1576658683755" media="all" />
+
+    <!-- End Pattern Lab -->
+
+</head>
+
+
+
+<body class="body">
+<div class="main-wrapper">
+    <div class="loading-div catalog-loader">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <header>
+        <div class="container clearfix text-center">
+            <div class="header-left float-left">
+
+                <a href="#" class="header-menu d-sm-inline-block  d-lg-none" data-toggle="collapse"
+                    data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <div class="ham-icon menu-open">
+                        <i aria-hidden="true" class="icon-Icon---Hamburger"></i>
+                        <span>Menu</span>
+                    </div>
+                    <div class="ham-icon menu-close">
+                        <i aria-hidden="true" class="icon-Icon---Close"></i>
+                        <span>Close</span>
+                    </div>
+                </a>
+                <a class="backtoAcc d-none d-lg-inline-block" href="#">Back to Account</a>
+
+            </div>
+            <div class="logo-wrapper">
+                <a class="navbar-brand" href="#" aria-label="US Bank">
+                    <img src="images/logo.png" alt="logo" class="header-logo" />
+                </a>
+
+            </div>
+            <div class="header-right float-right">
+                <div class="headerWelcomenote d-none d-lg-inline-block">
+                    <span>Welcome, <span>Tom!</span></span>
+                    <h4>123,456 Points</h4>
+                </div>
+                <ul class="list-icon">
+                    <li class="d-none d-lg-inline-block">
+                        <a href="#" id="dropdownMenuLink">
+
+                            <i aria-hidden="true" class="icon-Icon---Profile"></i>
+
+                            <span>Profile</span>
+
+
+                        </a>
+                    </li>
+                    <li class="d-none d-lg-inline-block">
+                        <a href="#" id="dropdownMenuLink">
+
+                            <i aria-hidden="true" class="icon-Icon---Cart"></i>
+
+                            <span>Cart</span>
+
+                            <i class="cartCount">12</i>
+
+                        </a>
+                    </li>
+                    <li class="d-sm-inline-block d-lg-none search-toggle">
+                        <a href="#" id="dropdownMenuLink">
+
+                            <i aria-hidden="true" class="icon-Icon---Search"></i>
+
+                            <span>Search</span>
+
+
+                        </a>
+                    </li>
+                    <li class="d-none d-lg-inline-block help-icon">
+                        <a href="#" id="dropdownMenuLink" autoComplete="off" data-toggle="dropdown"
+                            aria-haspopup="true">
+
+                            <i aria-hidden="true" class="icon-Icon---Help"></i>
+
+                            <span>Help</span>
+
+
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" dlavel="">
+                            <a class="dropdown-item" href="#eded">Faq</a>
+                            <a class="dropdown-item" href="#eded">Contact Us</a>
+                        </div>
+                    </li>
+                    <li class="demo-icon">
+                        <a href="#" id="dropdownMenuLink">
+
+                            <i aria-hidden="true" class="icon-Icon---Logout"></i>
+
+                            <span>Log out</span>
+
+
+                        </a>
+                    </li>
+                </ul>
+
+
+
+            </div>
+        </div>
+    </header>
+        <form>
+            <div class="nav-search-form global-search-mb d-none d-lg-none">
+                <input id="exampleId" autoComplete="off" class="form-control" placeholder="Lorem ipsum" type="email"
+                    aria-label="input feild" required data-required-error="Lorem Ipsum">
+        
+                <button class="search-btn">search</button>
+                <div class="parentElem mob" id="parentElemMob">
+                    <h4 class="header">Popular Items Matching Your Search</h4>
+                </div>
+            </div>
+        </form>
+        <div class="container nav-container">
+            <div class="primary-nav-wrapper">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        
+                        <div class="headerWelcomenote d-lg-none">
+                            <div class="container">
+                                <a href="#">
+                                    <img src="images/starterkit/product-fire.png" alt="Square Image" class="" />
+                                    <span>Welcome, Tom!</span>
+                                    <h4>123,456 Points</h4>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <p class="d-none menu-head-js">Main Menu</p>
+                            <a href="#" class="mb-menu-back d-lg-none">Back to <span></span></a>
+                            <p class="mb-menu-header d-lg-none">main menu</p>
+                            <div class="nav-list-container">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item dropdown mega-dropdown">
+        
+                                        <a class="nav-link dropdown-toggle" dLavel="0" href="#" id="navbarDropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Merchandise
+                                            <i aria-hidden="true" class="icon-Icon---Caret---Down"></i>
+        
+                                        </a>
+                                        <div class="dropdown-menu" dLavel="0" aria-labelledby="navbarDropdownMenuLink">
+                                            <div class="row no-gutters">
+                                                <div class="col-lg-4 col-md-12">
+                                                    <div class="nav-sub-menu-wrapper">
+        
+                                                        <ul class="nav-sub-menu">
+                                                            <li class="nav-item">
+                                                                <a class="nav-link dropdown-toggle" dLavel="1" href="#"
+                                                                    id="navbarSubDropdownMenu" data-toggle="dropdown"
+                                                                    aria-haspopup="true" aria-expanded="false">For the Home
+                                                                    <i aria-hidden="true" class="icon-Icon---Caret---Down"></i>
+                                                                </a>
+        
+        
+                                                                <div class="dropdown-menu dropdown-menu-sub offset-md-4"
+                                                                    dLavel="1" aria-labelledby="navbarSubDropdownMenu">
+                                                                    <ul>
+                                                                        <li><a href="" class="link ">Gaming</a></li>
+                                                                        <li><a href="" class="link ">Computer</a></li>
+                                                                        <li><a href="" class="link ">Audio</a></li>
+                                                                        <li><a href="" class="link ">TVs & Home Theater</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link dropdown-toggle" dLavel="1" href="#"
+                                                                    id="navbarSubDropdownMenu" data-toggle="dropdown"
+                                                                    aria-haspopup="true" aria-expanded="false">Electronics
+                                                                    <i aria-hidden="true" class="icon-Icon---Caret---Down"></i>
+                                                                </a>
+        
+        
+                                                                <div class="dropdown-menu dropdown-menu-sub offset-md-4"
+                                                                    dLavel="1" aria-labelledby="navbarSubDropdownMenu">
+                                                                    <ul>
+                                                                        <li><a href="" class="link ">click me</a></li>
+                                                                        <li><a href="" class="link ">click me</a></li>
+                                                                        <li><a href="" class="link ">click me</a></li>
+                                                                        <li><a href="" class="link ">click me</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link dropdown-toggle" dLavel="1" href="#"
+                                                                    id="navbarSubDropdownMenu" data-toggle="dropdown"
+                                                                    aria-haspopup="true" aria-expanded="false">Food &amp; Wine
+                                                                    <i aria-hidden="true" class="icon-Icon---Caret---Down"></i>
+                                                                </a>
+        
+        
+                                                                <div class="dropdown-menu dropdown-menu-sub offset-md-4"
+                                                                    dLavel="1" aria-labelledby="navbarSubDropdownMenu">
+                                                                    <ul>
+                                                                        <li><a href="" class="link ">some text</a></li>
+                                                                        <li><a href="" class="link ">some text</a></li>
+                                                                        <li><a href="" class="link ">some text</a></li>
+                                                                        <li><a href="" class="link ">some text</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link dropdown-toggle" dLavel="1" href="#"
+                                                                    id="navbarSubDropdownMenu" data-toggle="dropdown"
+                                                                    aria-haspopup="true" aria-expanded="false">Fashion &amp;
+                                                                    Beauty
+                                                                    <i aria-hidden="true" class="icon-Icon---Caret---Down"></i>
+                                                                </a>
+        
+        
+                                                                <div class="dropdown-menu dropdown-menu-sub offset-md-4"
+                                                                    dLavel="1" aria-labelledby="navbarSubDropdownMenu">
+                                                                    <ul>
+                                                                        <li><a href="" class="link ">some text</a></li>
+                                                                        <li><a href="" class="link ">some text</a></li>
+                                                                        <li><a href="" class="link ">some text</a></li>
+                                                                        <li><a href="" class="link ">some text</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link dropdown-toggle" dLavel="1" href="#"
+                                                                    id="navbarSubDropdownMenu" data-toggle="dropdown"
+                                                                    aria-haspopup="true" aria-expanded="false">For Kids
+                                                                    <i aria-hidden="true" class="icon-Icon---Caret---Down"></i>
+                                                                </a>
+        
+        
+                                                                <div class="dropdown-menu dropdown-menu-sub offset-md-4"
+                                                                    dLavel="1" aria-labelledby="navbarSubDropdownMenu">
+                                                                    <ul>
+                                                                        <li><a href="" class="link ">Gaming</a></li>
+                                                                        <li><a href="" class="link ">Computer</a></li>
+                                                                        <li><a href="" class="link ">Audio</a></li>
+                                                                        <li><a href="" class="link ">TVs & Home Theater</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link dropdown-toggle" dLavel="1" href="#"
+                                                                    id="navbarSubDropdownMenu" data-toggle="dropdown"
+                                                                    aria-haspopup="true" aria-expanded="false">Luggage
+                                                                    <i aria-hidden="true" class="icon-Icon---Caret---Down"></i>
+                                                                </a>
+        
+        
+                                                                <div class="dropdown-menu dropdown-menu-sub offset-md-4"
+                                                                    dLavel="1" aria-labelledby="navbarSubDropdownMenu">
+                                                                    <ul>
+                                                                        <li><a href="" class="link ">some text</a></li>
+                                                                        <li><a href="" class="link ">some text</a></li>
+                                                                        <li><a href="" class="link ">some text</a></li>
+                                                                        <li><a href="" class="link ">some text</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link dropdown-toggle" dLavel="1" href="#"
+                                                                    id="navbarSubDropdownMenu" data-toggle="dropdown"
+                                                                    aria-haspopup="true" aria-expanded="false">Office
+                                                                    <i aria-hidden="true" class="icon-Icon---Caret---Down"></i>
+                                                                </a>
+        
+        
+                                                                <div class="dropdown-menu dropdown-menu-sub offset-md-4"
+                                                                    dLavel="1" aria-labelledby="navbarSubDropdownMenu">
+                                                                    <ul>
+                                                                        <li><a href="" class="link ">Gaming</a></li>
+                                                                        <li><a href="" class="link ">Computer</a></li>
+                                                                        <li><a href="" class="link ">Audio</a></li>
+                                                                        <li><a href="" class="link ">TVs & Home Theater</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link dropdown-toggle" dLavel="1" href="#"
+                                                                    id="navbarSubDropdownMenu" data-toggle="dropdown"
+                                                                    aria-haspopup="true" aria-expanded="false">Sports &amp;
+                                                                    Recreation
+                                                                    <i aria-hidden="true" class="icon-Icon---Caret---Down"></i>
+                                                                </a>
+        
+        
+                                                                <div class="dropdown-menu dropdown-menu-sub offset-md-4"
+                                                                    dLavel="1" aria-labelledby="navbarSubDropdownMenu">
+                                                                    <ul>
+                                                                        <li><a href="" class="link ">some text</a></li>
+                                                                        <li><a href="" class="link ">some text</a></li>
+                                                                        <li><a href="" class="link ">some text</a></li>
+                                                                        <li><a href="" class="link ">some text</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <li class="nav-item">
+        
+                                                                <a class="nav-link" href="#">See All Merchandise </a>
+        
+                                                            </li>
+                                                        </ul>
+                                                        <div class="top-brand">
+                                                            <h5>TOP BRANDS</h5>
+                                                            <ul class="list">
+                                                                <li><a href="" class="link ">click me</a></li>
+                                                                <li><a href="" class="link ">click me</a></li>
+                                                            </ul>
+                                                        </div>
+        
+                                                    </div>
+        
+                                                </div>
+                                                <div class="col-md-4 d-md-none d-lg-block offset-md-4">
+        
+                                                    <div class="card card-wrapper with-background">
+                                                        <div class="card-img-container">
+                                                            <img src="images/starterkit/product-fire.png" alt="Square Image"
+                                                                class="mx-auto d-block" />
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h5>Card title</h5>
+                                                            <h6>Lorem ipsum dolor sit amet</h6>
+                                                            <p>20900<span> Points</span></p>
+                                                            <button type="" class="btn btn-primary">Lorem ipsum</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown mega-dropdown">
+        
+                                        <a class="nav-link " dLavel="0" href="#" id="navbarDropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Gift Cards
+        
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown mega-dropdown">
+        
+                                        <a class="nav-link " dLavel="0" href="#" id="navbarDropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Magazines
+        
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown mega-dropdown">
+        
+                                        <a class="nav-link " dLavel="0" href="#" id="navbarDropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Events
+        
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown mega-dropdown">
+        
+                                        <a class="nav-link " dLavel="0" href="#" id="navbarDropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Cash Back
+        
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown mega-dropdown">
+        
+                                        <a class="nav-link " dLavel="0" href="#" id="navbarDropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Travel
+        
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown mega-dropdown">
+        
+                                        <a class="nav-link dropdown-toggle" dLavel="0" href="#" id="navbarDropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            More…
+                                            <i aria-hidden="true" class="icon-Icon---Caret---Down"></i>
+        
+                                        </a>
+                                        <div class="dropdown-menu" dLavel="0" aria-labelledby="navbarDropdownMenuLink">
+                                            <div class="row no-gutters">
+                                                <div class="col-lg-4 col-md-12">
+                                                    <div class="nav-sub-menu-wrapper">
+        
+                                                        <ul class="nav-sub-menu">
+                                                            <li class="nav-item">
+        
+                                                                <a class="nav-link" href="#">More For the Home </a>
+        
+                                                            </li>
+                                                            <li class="nav-item">
+        
+                                                                <a class="nav-link" href="#">More Electronics </a>
+        
+                                                            </li>
+                                                            <li class="nav-item">
+        
+                                                                <a class="nav-link" href="#">More Food &amp; Wine </a>
+        
+                                                            </li>
+                                                            <li class="nav-item">
+        
+                                                                <a class="nav-link" href="#">More Fashion &amp; Beauty </a>
+        
+                                                            </li>
+                                                            <li class="nav-item">
+        
+                                                                <a class="nav-link" href="#">More For Kids </a>
+        
+                                                            </li>
+                                                            <li class="nav-item">
+        
+                                                                <a class="nav-link" href="#">More Luggage </a>
+        
+                                                            </li>
+                                                            <li class="nav-item">
+        
+                                                                <a class="nav-link" href="#">More Office </a>
+        
+                                                            </li>
+                                                            <li class="nav-item">
+        
+                                                                <a class="nav-link" href="#">More Sports &amp; Recreation </a>
+        
+                                                            </li>
+                                                            <li class="nav-item">
+        
+                                                                <a class="nav-link" href="#">More See All Merchandise </a>
+        
+                                                            </li>
+                                                        </ul>
+                                                        <div class="top-brand">
+                                                            <h5>TOP BRANDS</h5>
+                                                            <ul class="list">
+                                                                <li><a href="" class="link ">click me</a></li>
+                                                                <li><a href="" class="link ">click me</a></li>
+                                                            </ul>
+                                                        </div>
+        
+                                                    </div>
+        
+                                                </div>
+                                                <div class="col-md-4 d-md-none d-lg-block offset-md-4">
+        
+                                                    <div class="card card-wrapper with-background">
+                                                        <div class="card-img-container">
+                                                            <img src="images/starterkit/product-fire.png" alt="Square Image"
+                                                                class="mx-auto d-block" />
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <h5>Card title</h5>
+                                                            <h6>Lorem ipsum dolor sit amet</h6>
+                                                            <p>20900<span> Points</span></p>
+                                                            <button type="" class="btn btn-primary">Lorem ipsum</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <form class="nav-search-form form-inline d-md-none d-lg-block">
+                                    <input id="exampleId" autoComplete="off" class="form-control" placeholder="Lorem ipsum"
+                                        type="text" aria-label="input feild" required data-required-error="Lorem Ipsum">
+        
+                                    <button class="search-btn">search</button>
+                                    <div class="parentElem desk" id="parentElemDesk">
+                                        <h4 class="header">Popular Items Matching Your Search</h4>
+        
+                                    </div>
+                                </form>
+                                <div class="head-nav d-lg-none">
+                                    <ul class="list-icon">
+                                        <li class="demo-icon">
+                                            <a href="#" id="dropdownMenuLink">
+        
+                                                <i aria-hidden="true" class="icon-Icon---Profile"></i>
+        
+                                                <span>Profile</span>
+        
+        
+                                            </a>
+                                        </li>
+                                        <li class="demo-icon">
+                                            <a href="#" id="dropdownMenuLink">
+        
+                                                <i aria-hidden="true" class="icon-Icon---Cart"></i>
+        
+                                                <span>Cart</span>
+        
+                                                <i class="cartCount">12</i>
+        
+                                            </a>
+                                        </li>
+                                        <li class="demo-icon">
+                                            <a href="#" id="dropdownMenuLink" autoComplete="off" data-toggle="dropdown"
+                                                aria-haspopup="true" dlavel="3">
+        
+                                                <i aria-hidden="true" class="icon-Icon---Help"></i>
+        
+                                                <span>Help</span>
+        
+        
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" dlavel="3">
+                                                <a class="dropdown-item" href="#eded">Faq</a>
+                                                <a class="dropdown-item" href="#eded">Contact Us</a>
+                                            </div>
+                                        </li>
+                                        <li class="demo-icon">
+                                            <a href="#" id="dropdownMenuLink">
+        
+                                                <i aria-hidden="true" class="icon-Icon---Help"></i>
+        
+                                                <span>Back to Account</span>
+        
+        
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                </nav>
+            </div>
+        </div>
+    <div class="product-details-wrapper">
+        <div class="container">
+
+
+            <div class="catalog-head product-breadcumb">
+
+                <div class="catalog-head-breadcrumb">
+                    <ul>
+                        <li><a href="" class="">Home</a></li>
+                        <li><a href="" class="">Merchandise</a></li>
+                        <li><a href="" class="">Electronics</a></li>
+                        <li><a href="" class="">Cameras</a></li>
+                        <li><a href="" class="">DSLR Cameras</a></li>
+                        <li><a href="" class="active">Nikon D3500</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row productConfigurationDetail">
+
+                <div class="col-12 col-sm-6">
+
+                    <div class="slider-mob">
+                        <div class="slick-slider-wrapper slider-container-js">
+                            <div class="slide ">
+                                <a href="#">
+                                    <div class="img-background">
+                                        <img src="images/starterkit/ProductImageNikon1.png" alt="">
+                                    </div>
+
+                                    <p></p>
+                                </a>
+                            </div>
+                            <div class="slide ">
+                                <a href="#">
+                                    <div class="img-background">
+                                        <img src="images/starterkit/ProductImageNikon2.png" alt="">
+                                    </div>
+
+                                    <p></p>
+                                </a>
+                            </div>
+                            <div class="slide ">
+                                <a href="#">
+                                    <div class="img-background">
+                                        <img src="images/starterkit/ProductImageNikon3.png" alt="">
+                                    </div>
+
+                                    <p></p>
+                                </a>
+                            </div>
+                            <div class="slide ">
+                                <a href="#">
+                                    <div class="img-background">
+                                        <img src="images/starterkit/ProductImageNikon4.png" alt="">
+                                    </div>
+
+                                    <p></p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row flex-direction">
+
+                        <div class="col-lg-2 col-md-12 col-sm-12 slider-display">
+                            <div class="slider slider-nav">
+                                <div>
+                                    <img src="images/starterkit/ProductImageNikon1.png" alt="US bank">
+                                </div>
+                                <div>
+                                    <img src="images/starterkit/ProductImageNikon2.png" alt="US bank">
+                                </div>
+                                <div>
+                                    <img src="images/starterkit/ProductImageNikon3.png" alt="US bank">
+                                </div>
+                                <div>
+                                    <img src="images/starterkit/ProductImageNikon4.png" alt="US bank">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-10 col-md-12 col-sm-12 slider-display">
+                            <div class="slider slider-for">
+                                <div>
+                                    <img src="images/starterkit/ProductImageNikon1.png" alt="US bank">
+                                </div>
+                                <div>
+                                    <img src="images/starterkit/ProductImageNikon2.png" alt="US bank">
+                                </div>
+                                <div>
+                                    <img src="images/starterkit/ProductImageNikon3.png" alt="US bank">
+                                </div>
+                                <div>
+                                    <img src="images/starterkit/ProductImageNikon4.png" alt="US bank">
+                                </div>
+                            </div>
+                            <div class="pdp-slider catalog-product-list--points">
+                                <h2 class=""><span class="points">7000</span> Points</h2>
+                                <p>Points + Cash</p>
+                                <input type="range" class="custom-range customRangepdp">
+                                <div class="poit-range-container">
+                                    <span class="pull-left point-bottom">
+                                        <p class="ammount">600</p>
+                                    </span>
+                                    <span class="pull-right point-bottom">
+                                        <p class="ammount">$0</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-sm-6">
+
+                    <h4>Nikon D3500 W/ AF-P DX NIKKOR 18-55mm</h4>
+                    <h5>10,000 Points</h5>
+                    <p>Was 14,000 Points</p>
+                    <form data-toggle="validator" novalidate="true">
+                        <div class="productConfigurationList">
+                            <input type="hidden" class="rewardId" value="115">
+                            <input type="hidden" class="selectedOne" value="115,140">
+                            <input type="hidden" class="selectedTwo" value="105">
+                            <input type="hidden" class="selectedThree" value="115,140">
+
+
+                            <div class="form-group ">
+
+                                <label for="" class="">style:</label>
+                                <select required id="styleId" class="form-control">
+                                    <option value="1/188-55mm">1/188-55mm</option>
+                                    <option value="1/188-33mm">1/188-33mm</option>
+                                    <option value="1/199-55mm">1/199-55mm</option>
+                                </select>
+                                <div class="help-block with-errors"></div>
+
+
+                            </div>
+
+
+                            <div class="form-group ">
+
+                                <label for="" class="">configuration:</label>
+                                <select required id="configurationId" class="form-control">
+                                    <option value="Base">Base</option>
+                                    <option value="Base1">Base1</option>
+                                    <option value="Base2">Base2</option>
+                                </select>
+                                <div class="help-block with-errors"></div>
+
+
+                            </div>
+
+
+                            <div class="form-group ">
+
+                                <label for="" class="">Color:</label>
+                                <select required id="colorId" class="form-control">
+                                    <option value="Black">Black</option>
+                                    <option value="White">White</option>
+                                    <option value="Grey">Grey</option>
+                                </select>
+                                <div class="help-block with-errors"></div>
+
+
+                            </div>
+
+
+                            <div class="form-group quanityWrapper">
+
+                                <label for="" class="">Qty:</label>
+
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-outline qty-sub">-</button>
+                                    <input id="qtyCount" class="form-control" type="text" value="2" max-value="100"
+                                        data-numeric-value="qty" data-numeric-value-error="Numeric value only"
+                                        data-required-error="Please enter a valid Quantity.">
+                                    <button type="button" class="btn btn-outline qty-add">+</button>
+                                </div>
+
+                                <div class="help-block with-errors"></div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="add-btns">
+                            <button type="" class="btn btn-fill"> Add to Cart</button>
+                        </div>
+                    </form>
+                    <div class="productDetails">
+
+                        <h4>Details</h4>
+
+
+                        <ul class="list">
+                            <li>20.1 MP 1/2.3&quot; Super HAD CCD Sensor</li>
+                            <li>Optical 5x Zoom Lens &amp; 10x Digital Zoom</li>
+                            <li>Equivalent 35mm Focal Length:26-130mm</li>
+                            <li>2.7&quot; Clear Photo LCD 230k-Dot Monitor</li>
+                            <li>720p HD Video at 30fps</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="container">
+
+            <div class="row productDetailDesc">
+                <div class="col-lg-3 col-md-12 col-12">
+                    <h4>About this item</h4>
+                </div>
+                <div class="col-lg-7 col-md-12 col-12">
+                    <p class="show-read-more">Etiam posuere tellus mauris, et dignissim nisl rutrum quis. Mauris
+                        tincidunt ante sed velit maximus, vel tincidunt leo imperdiet. Morbi nec lacus et metus semper
+                        porttitor. Sed pellentesque ex at pellentesque scelerisque. Aliquam placerat gravida tortor, in
+                        fermentum ante commodo quis. Etiam vehicula elementum quam. Aliquam eu augue eu lacus dignissim
+                        efficitur. Proin ex metus, ornare placerat nisi at, porta lobortis turpis.</p>
+                </div>
+            </div>
+            <div class="row productDetailDesc">
+                <div class="col-lg-3 col-md-12 col-12">
+                    <h4>Shipping and fulfillment information</h4>
+                </div>
+                <div class="col-lg-7 col-md-12 col-12">
+                    <p class="show-read-more">Etiam posuere tellus mauris, et dignissim nisl rutrum quis. Mauris
+                        tincidunt ante sed velit maximus, vel tincidunt leo imperdiet. Morbi nec lacus et metus semper
+                        porttitor. Sed pellentesque ex at pellentesque scelerisque. Aliquam placerat gravida tortor, in
+                        fermentum ante commodo quis. Etiam vehicula elementum quam. Aliquam eu augue eu lacus dignissim
+                        efficitur. Proin ex metus, ornare placerat nisi at, porta lobortis turpis.</p>
+                </div>
+            </div>
+            <div class="row productDetailDesc">
+                <div class="col-lg-3 col-md-12 col-12">
+                    <h4>Terms and conditions</h4>
+                </div>
+                <div class="col-lg-7 col-md-12 col-12">
+                    <p class="show-read-more">Etiam posuere tellus mauris, et dignissim nisl rutrum quis. Mauris
+                        tincidunt ante sed velit maximus, vel tincidunt leo imperdiet. Morbi nec lacus et metus semper
+                        porttitor. Sed pellentesque ex at pellentesque scelerisque. Aliquam placerat gravida tortor, in
+                        fermentum ante commodo quis. Etiam vehicula elementum quam. Aliquam eu augue eu lacus dignissim
+                        efficitur. Proin ex metus, ornare placerat nisi at, porta lobortis turpis.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="recent-wrapper">
+                <h2>Related Items</h2>
+                <div class="slick-slider-wrapper slider-container-catalog">
+                    <div class="slide ">
+                        <a href="#">
+                            <div class="img-background">
+                                <img src="images/starterkit/ProductNikon.png" alt="Square Image">
+                            </div>
+                            <h4>Canon EOS 5D Ma</h4>
+
+                            <p>12,000 Points</p>
+                        </a>
+                    </div>
+                    <div class="slide ">
+                        <a href="#">
+                            <div class="img-background">
+                                <img src="images/starterkit/ProductImageFuji.png" alt="Square Image">
+                            </div>
+                            <h4>Sony a7 III Full-fragment</h4>
+
+                            <p>12,000 Points</p>
+                        </a>
+                    </div>
+                    <div class="slide ">
+                        <a href="#">
+                            <div class="img-background">
+                                <img src="images/starterkit/ProductImageNikon1.png" alt="Square Image">
+                            </div>
+                            <h4>Canon PoweShots</h4>
+
+                            <p>12,000 Points</p>
+                        </a>
+                    </div>
+                    <div class="slide ">
+                        <a href="#">
+                            <div class="img-background">
+                                <img src="images/starterkit/ProductImagePointShoot.png" alt="Square Image">
+                            </div>
+                            <h4>Fujifilm X100F 24…</h4>
+
+                            <p>12,000 Points</p>
+                        </a>
+                    </div>
+                    <div class="slide ">
+                        <a href="#">
+                            <div class="img-background">
+                                <img src="images/starterkit/ProductImageFuji.png" alt="Square Image">
+                            </div>
+                            <h4>Panasonic Lumix…</h4>
+
+                            <p>12,000 Points</p>
+                        </a>
+                    </div>
+                    <div class="slide ">
+                        <a href="#">
+                            <div class="img-background">
+                                <img src="images/starterkit/ProductNikon.png" alt="Square Image">
+                            </div>
+                            <h4>Sony DSCW800/B…</h4>
+
+                            <p>12,000 Points</p>
+                        </a>
+                    </div>
+                    <div class="slide ">
+                        <a href="#">
+                            <div class="img-background">
+                                <img src="images/starterkit/ProductImagePointShoot.png" alt="Square Image">
+                            </div>
+                            <h4>Sony a7 III Full-fragment</h4>
+
+                            <p>12,000 Points</p>
+                        </a>
+                    </div>
+                    <div class="slide ">
+                        <a href="#">
+                            <div class="img-background">
+                                <img src="images/starterkit/ProductNikon.png" alt="Square Image">
+                            </div>
+                            <h4>Panasonic Lumix…</h4>
+
+                            <p>12,000 Points</p>
+                        </a>
+                    </div>
+                    <div class="slide ">
+                        <a href="#">
+                            <div class="img-background">
+                                <img src="images/starterkit/ProductNikon.png" alt="Square Image">
+                            </div>
+                            <h4>Sony DSCW800/B…</h4>
+
+                            <p>12,000 Points</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="recent-wrapper">
+                <h2>Recently Viewed Items</h2>
+                <div class="slick-slider-wrapper slider-container-catalog">
+                    <div class="slide ">
+                        <a href="#">
+                            <div class="img-background">
+                                <img src="images/starterkit/ProductImageScandisk.png" alt="Square Image">
+                            </div>
+                            <h4>ScanDisk Ultra 32…</h4>
+
+                            <p>6,000 Points</p>
+                        </a>
+                    </div>
+                    <div class="slide ">
+                        <a href="#">
+                            <div class="img-background">
+                                <img src="images/starterkit/productEcho.png" alt="Square Image">
+                            </div>
+                            <h4>Amazon Echo Dot</h4>
+
+                            <p>24,000 Points</p>
+                        </a>
+                    </div>
+                    <div class="slide ">
+                        <a href="#">
+                            <div class="img-background">
+                                <img src="images/starterkit/ProductImageFitbit.png" alt="Square Image">
+                            </div>
+                            <h4>Fitbit SuperFit 300…</h4>
+
+                            <p>43,000 Points</p>
+                        </a>
+                    </div>
+                    <div class="slide ">
+                        <a href="#">
+                            <div class="img-background">
+                                <img src="images/starterkit/ProductImageGoogle.png" alt="Square Image">
+                            </div>
+                            <h4>Google Home - Sm…</h4>
+
+                            <p>33,000 Points</p>
+                        </a>
+                    </div>
+                    <div class="slide ">
+                        <a href="#">
+                            <div class="img-background">
+                                <img src="images/starterkit/ProductImageFuji.png" alt="Square Image">
+                            </div>
+                            <h4>Fujifilm X100F 24…</h4>
+
+                            <p>12,000 Points</p>
+                        </a>
+                    </div>
+                    <div class="slide ">
+                        <a href="#">
+                            <div class="img-background">
+                                <img src="images/starterkit/ProductImageVlog.png" alt="Square Image">
+                            </div>
+                            <h4>Vlogging Camera…</h4>
+
+                            <p>12,000 Points</p>
+                        </a>
+                    </div>
+                    <div class="slide ">
+                        <a href="#">
+                            <div class="img-background">
+                                <img src="images/starterkit/ProductNikon.png" alt="Square Image">
+                            </div>
+                            <h4>Sony a7 III Full-fragment</h4>
+
+                            <p>12,000 Points</p>
+                        </a>
+                    </div>
+                    <div class="slide ">
+                        <a href="#">
+                            <div class="img-background">
+                                <img src="images/starterkit/ProductImageFuji.png" alt="Square Image">
+                            </div>
+                            <h4>Sony a7 III Full-fragment POT</h4>
+
+                            <p>12,000 Points</p>
+                        </a>
+                    </div>
+                    <div class="slide ">
+                        <a href="#">
+                            <div class="img-background">
+                                <img src="images/starterkit/ProductImageVlog.png" alt="Square Image">
+                            </div>
+                            <h4>Canon PoweShots</h4>
+
+                            <p>12,000 Points</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-sm-12 col-5 logo">
+                    <a class="navbar-brand" href="#" aria-label="PNC">
+                        <img src="images/starterkit/pnc_footer_logo.png" alt="logo">
+                    </a>
+
+                </div>
+                <div class="col-lg-5 col-sm-12 col-7">
+                    <ul class="list">
+                        <li><a href="" class="link" aria-label="Security &amp; Privacy">Security &amp; Privacy</a></li>
+                        <li><a href="" class="link" aria-label="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+                        <li><a href="" class="link" aria-label="Privacy Policy">Privacy Policy</a></li>
+                    </ul>
+                    <p class="d-none d-sm-block">© 2019 The PNC Financial Services Group, Inc. All rights reserved.</p>
+                </div>
+            </div>
+            <div class="row d-block d-sm-none">
+                <div class="col-12">
+                    <p>© 2019 The PNC Financial Services Group, Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+    <!--DO NOT REMOVE-->
+    <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+    {
+      "cssEnabled": false,
+      "patternLineageExists": true,
+      "patternLineages": [{
+        "lineagePattern": "templates-home",
+        "lineagePath": "../../patterns/06-templates-00-home\\06-templates-00-home.rendered.html"
+      }],
+      "lineage": [{
+        "lineagePattern": "templates-home",
+        "lineagePath": "../../patterns/06-templates-00-home\\06-templates-00-home.rendered.html"
+      }],
+      "patternLineageRExists": false,
+      "patternLineagesR": [],
+      "lineageR": [],
+      "patternLineageEExists": true,
+      "patternDesc": "",
+      "patternBreadcrumb": {
+        "patternType": "pages"
+      },
+      "patternExtension": "mustache",
+      "patternName": "Home",
+      "patternPartial": "pages-home",
+      "patternState": "",
+      "patternEngineName": "mustache",
+      "extraOutput": {}
+    }
+  </script>
+
+    <script>
+        /*!
+         * scriptLoader - v0.1
+         *
+         * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+         * Licensed under the MIT license
+         *
+         */
+
+        var scriptLoader = {
+
+            run: function (js, cb, target) {
+                var s = document.getElementById(target + '-' + cb);
+                for (var i = 0; i < js.length; i++) {
+                    var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+                    var c = document.createElement('script');
+                    c.src = '../../' + src + '?' + cb;
+                    if (typeof js[i] != 'string') {
+                        if (js[i].dep !== undefined) {
+                            c.onload = function (dep, cb, target) {
+                                return function () {
+                                    scriptLoader.run(dep, cb, target);
+                                }
+                            }(js[i].dep, cb, target);
+                        }
+                    }
+                    s.parentNode.insertBefore(c, s);
+                }
+            }
+
+        }
+    </script>
+
+    <script id="pl-js-polyfill-insert-1576658683755">
+            (function () {
+                if (self != top) {
+                    var cb = '1576658683755';
+                    var js = [];
+                    if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+                        js.push('styleguide/bower_components/classList.min.js');
+                    }
+                    scriptLoader.run(js, cb, 'pl-js-polyfill-insert');
+                }
+            })();
+    </script>
+
+    <script id="pl-js-insert-1576658683755">
+        (function () {
+            if (self != top) {
+                var cb = '1576658683755';
+                var js = [{
+                    'src': 'styleguide/bower_components/jwerty.min.js',
+                    'dep': ['styleguide/js/patternlab-pattern.min.js']
+                }];
+                scriptLoader.run(js, cb, 'pl-js-insert');
+            }
+        })();
+    </script>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script type="text/javascript" src="js/starterkit/validator.js"></script>
+    <script type="text/javascript" src="js/starterkit/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/starterkit/jquery.selectBox.js"></script>
+    <script type="text/javascript" src="js/starterkit/slick.min.js"></script>
+    <script type="text/javascript" src="js/starterkit/datatables.min.js"></script>
+    <script type="text/javascript" src="js/starterkit/jquery.mCustomScrollbar.min.js"></script>
+    <script type="text/javascript" src="js/starterkit/utility.js"></script>
+    <script type="text/javascript" src="js/starterkit/nav.js"></script>
+    <script type="text/javascript" src="js/starterkit/progress.js"></script>
+    <script type="text/javascript" src="js/starterkit/validation.js"></script>
+    <script type="text/javascript" src="js/starterkit/overlay.js"></script>
+    <script type="text/javascript" src="js/starterkit/points.js"></script>
+    <script type="text/javascript" src="js/starterkit/pointsummary.js"></script>
+    <script type="text/javascript" src="js/starterkit/product-selection.js"></script>
+    <script type="text/javascript" src="js/starterkit/cashback.js"></script>
+    <script type="text/javascript" src="js/starterkit/catalogListing.js"></script>
+    <script type="text/javascript" src="js/starterkit/net-jets-redeem.js"></script>
+    <script type="text/javascript" src="js/starterkit/matMidPoints.js"></script>
+    <script type="text/javascript" src="js/starterkit/catalogDetails.js"></script>
+
+</body>
+
+</html>
